@@ -1,0 +1,16 @@
+﻿CREATE TABLE [dbo].[SizeCountries](
+	[SizeShortName]		 VARCHAR(25) NOT NULL,
+	[SizeDepartmentId]	 INT		 NOT NULL,
+	[USSizeShortName]	 VARCHAR(25) NULL,
+	[EuropSizeShortName] VARCHAR(25) NULL,
+	[LengthCM]			 FLOAT		 NULL,
+	[LengthInch]		 FLOAT		 NULL,
+	[IsActive]			 BIT		 NOT NULL DEFAULT 1,
+	[CreatedBy]			 INT		 NOT NULL,
+	[CreatedDate]		 DATETIME	 NOT NULL,
+	[UpdatedBy]			 INT		 NULL,
+	[UpdatedDate]		 DATETIME	 NULL,
+	[BranchTransferd]	 BIT		 NOT NULL DEFAULT 0,
+	[Transfered]		 BIT		 NOT NULL DEFAULT 0,
+	[ChangeTimeStamp]	 ROWVERSION  NOT NULL,
+)

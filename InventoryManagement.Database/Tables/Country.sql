@@ -1,0 +1,15 @@
+﻿CREATE TABLE [dbo].[Country](
+	[CountryId] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	[CountryName] VARCHAR(100) NOT NULL,
+	[CountryCode] VARCHAR(20) NOT NULL,
+	[MobileFixCode] VARCHAR(15) NOT NULL,
+	[CurrencyRate] FLOAT NOT NULL DEFAULT 0,
+	[IsActive] BIT NOT NULL DEFAULT 1,
+	[CreatedBy] INT NOT NULL,
+	[CreatedDate] DATETIME NOT NULL,
+	[UpdatedBy] INT NULL,
+	[UpdatedDate] DATETIME NULL,
+	[BranchTransferd] BIT NOT NULL DEFAULT 0,
+	[Transfered] BIT NOT NULL DEFAULT 0,
+	[ChangeTimeStamp] ROWVERSION NOT NULL,
+)

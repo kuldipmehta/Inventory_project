@@ -1,0 +1,9 @@
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.Entity\bin\Debug\netcoreapp2.2\tm_InventoryManagement.Entity.deps.json
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.Entity\bin\Debug\netcoreapp2.2\tm_InventoryManagement.Entity.dll
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.Entity\bin\Debug\netcoreapp2.2\tm_InventoryManagement.Entity.pdb
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.Entity\obj\Debug\netcoreapp2.2\tm_InventoryManagement.Entity.csprojAssemblyReference.cache
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.Entity\obj\Debug\netcoreapp2.2\tm_InventoryManagement.Entity.csproj.CoreCompileInputs.cache
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.Entity\obj\Debug\netcoreapp2.2\tm_InventoryManagement.Entity.AssemblyInfoInputs.cache
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.Entity\obj\Debug\netcoreapp2.2\tm_InventoryManagement.Entity.AssemblyInfo.cs
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.Entity\obj\Debug\netcoreapp2.2\tm_InventoryManagement.Entity.dll
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.Entity\obj\Debug\netcoreapp2.2\tm_InventoryManagement.Entity.pdb

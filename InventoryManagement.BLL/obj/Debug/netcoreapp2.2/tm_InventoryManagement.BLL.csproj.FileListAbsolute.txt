@@ -1,0 +1,16 @@
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.BLL\bin\Debug\netcoreapp2.2\tm_InventoryManagement.BLL.deps.json
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.BLL\bin\Debug\netcoreapp2.2\tm_InventoryManagement.BLL.dll
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.BLL\bin\Debug\netcoreapp2.2\tm_InventoryManagement.BLL.pdb
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.BLL\bin\Debug\netcoreapp2.2\tm_InventoryManagement.Common.dll
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.BLL\bin\Debug\netcoreapp2.2\tm_InventoryManagement.DAL.dll
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.BLL\bin\Debug\netcoreapp2.2\tm_InventoryManagement.Entity.dll
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.BLL\bin\Debug\netcoreapp2.2\tm_InventoryManagement.Common.pdb
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.BLL\bin\Debug\netcoreapp2.2\tm_InventoryManagement.DAL.pdb
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.BLL\bin\Debug\netcoreapp2.2\tm_InventoryManagement.Entity.pdb
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.BLL\obj\Debug\netcoreapp2.2\tm_InventoryManagement.BLL.csprojAssemblyReference.cache
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.BLL\obj\Debug\netcoreapp2.2\tm_InventoryManagement.BLL.csproj.CoreCompileInputs.cache
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.BLL\obj\Debug\netcoreapp2.2\tm_InventoryManagement.BLL.AssemblyInfoInputs.cache
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.BLL\obj\Debug\netcoreapp2.2\tm_InventoryManagement.BLL.AssemblyInfo.cs
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.BLL\obj\Debug\netcoreapp2.2\tm_InventoryManagement.BLL.csproj.CopyComplete
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.BLL\obj\Debug\netcoreapp2.2\tm_InventoryManagement.BLL.dll
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.BLL\obj\Debug\netcoreapp2.2\tm_InventoryManagement.BLL.pdb

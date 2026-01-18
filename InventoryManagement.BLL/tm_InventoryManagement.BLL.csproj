@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Interface\IRegister.cs" />
+    <Compile Remove="Interface\IRoleManagement.cs" />
+    <Compile Remove="RegisterService.cs" />
+    <Compile Remove="RoleManagementService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InventoryManagement.Common\tm_InventoryManagement.Common.csproj" />
+    <ProjectReference Include="..\InventoryManagement.DAL\tm_InventoryManagement.DAL.csproj" />
+    <ProjectReference Include="..\InventoryManagement.Entity\tm_InventoryManagement.Entity.csproj" />
+  </ItemGroup>
+
+</Project>

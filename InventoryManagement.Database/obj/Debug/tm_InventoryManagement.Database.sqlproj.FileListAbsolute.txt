@@ -1,0 +1,10 @@
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.Database\bin\Debug\tm_InventoryManagement.Database.dacpac
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.Database\bin\Debug\tm_InventoryManagement.Database.dll
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.Database\bin\Debug\tm_InventoryManagement.Database.pdb
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.Database\obj\Debug\tm_InventoryManagement.Database.sqlprojAssemblyReference.cache
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.Database\obj\Debug\Model.xml
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.Database\obj\Debug\refactor.xml
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.Database\obj\Debug\postdeploy.sql
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.Database\obj\Debug\predeploy.sql
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.Database\obj\Debug\tm_InventoryManagement.Database.dll
+D:\Development\TFS\tm_InventoryManagement\InventoryManagement.Database\obj\Debug\tm_InventoryManagement.Database.pdb

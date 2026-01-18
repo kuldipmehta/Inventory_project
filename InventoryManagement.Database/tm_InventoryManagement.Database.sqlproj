@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>tm_InventoryManagement.Database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{7af61cb1-ab91-4bcd-bc39-026a1e22d025}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>tm_InventoryManagement.Database</RootNamespace>
+    <AssemblyName>tm_InventoryManagement.Database</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Functions" />
+    <Folder Include="PreloadedScripts" />
+    <Folder Include="StoreProcedures" />
+    <Folder Include="Tables" />
+    <Folder Include="TableTypes" />
+    <Folder Include="Views" />
+    <Folder Include="StoreProcedures\Country" />
+    <Folder Include="StoreProcedures\State" />
+    <Folder Include="StoreProcedures\City" />
+    <Folder Include="StoreProcedures\Area" />
+    <Folder Include="StoreProcedures\Menu" />
+    <Folder Include="StoreProcedures\Permission" />
+    <Folder Include="StoreProcedures\Role" />
+    <Folder Include="StoreProcedures\User" />
+    <Folder Include="StoreProcedures\Brand" />
+    <Folder Include="StoreProcedures\Color" />
+    <Folder Include="StoreProcedures\Department" />
+    <Folder Include="StoreProcedures\ItemGoup" />
+    <Folder Include="StoreProcedures\Style" />
+    <Folder Include="StoreProcedures\DesignNos" />
+    <Folder Include="StoreProcedures\Items" />
+    <Folder Include="StoreProcedures\SizeGroups" />
+    <Folder Include="StoreProcedures\SizeGroupSizes" />
+    <Folder Include="StoreProcedures\Sizes" />
+    <Folder Include="StoreProcedures\Products" />
+    <Folder Include="StoreProcedures\GlobalSetting" />
+    <Folder Include="StoreProcedures\Tax" />
+    <Folder Include="StoreProcedures\HSNCode" />
+    <Folder Include="StoreProcedures\AccountCategory" />
+    <Folder Include="StoreProcedures\CustomerCategory" />
+    <Folder Include="StoreProcedures\AccountGroup" />
+    <Folder Include="StoreProcedures\FinancialYear" />
+    <Folder Include="StoreProcedures\Company" />
+    <Folder Include="StoreProcedures\Employee" />
+    <Folder Include="StoreProcedures\Branch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\State.sql" />
+    <Build Include="Tables\Country.sql" />
+    <Build Include="Tables\Companies.sql" />
+    <Build Include="Tables\Area.sql" />
+    <Build Include="StoreProcedures\Country\AddCountry.sql" />
+    <Build Include="StoreProcedures\Country\DeleteUnDeleteCountry.sql" />
+    <Build Include="StoreProcedures\Country\EditCountry.sql" />
+    <Build Include="StoreProcedures\Country\GetCountryDetails.sql" />
+    <Build Include="StoreProcedures\State\AddState.sql" />
+    <Build Include="StoreProcedures\State\DeleteUnDeleteState.sql" />
+    <Build Include="StoreProcedures\State\EditState.sql" />
+    <Build Include="StoreProcedures\State\GetStateDetails.sql" />
+    <Build Include="StoreProcedures\City\AddCity.sql" />
+    <Build Include="StoreProcedures\City\DeleteUnDeleteCity.sql" />
+    <Build Include="StoreProcedures\City\EditCity.sql" />
+    <Build Include="StoreProcedures\City\GetCityDetails.sql" />
+    <Build Include="StoreProcedures\Area\AddArea.sql" />
+    <Build Include="StoreProcedures\Area\DeleteUnDeleteArea.sql" />
+    <Build Include="StoreProcedures\Area\EditArea.sql" />
+    <Build Include="StoreProcedures\Area\GetAreaDetails.sql" />
+    <Build Include="Tables\ApplicationRole.sql" />
+    <Build Include="Tables\ApplicationUser.sql" />
+    <Build Include="Tables\ApplicationUserRole.sql" />
+    <Build Include="Tables\Permission.sql" />
+    <Build Include="Tables\Menu.sql" />
+    <Build Include="StoreProcedures\Menu\AddMenu.sql" />
+    <Build Include="StoreProcedures\Menu\DeleteUnDeleteMenu.sql" />
+    <Build Include="StoreProcedures\Menu\EditMenu.sql" />
+    <Build Include="StoreProcedures\Menu\GetMenuDetails.sql" />
+    <Build Include="StoreProcedures\Permission\AddPermission.sql" />
+    <Build Include="StoreProcedures\Permission\DeleteUnDeletePermission.sql" />
+    <Build Include="StoreProcedures\Permission\EditPermission.sql" />
+    <Build Include="StoreProcedures\Permission\GetPermissionDetails.sql" />
+    <Build Include="StoreProcedures\Role\AddRole.sql" />
+    <Build Include="StoreProcedures\Role\DeleteUnDeleteRole.sql" />
+    <Build Include="StoreProcedures\Role\EditRole.sql" />
+    <Build Include="StoreProcedures\Role\GetRoleDetails.sql" />
+    <Build Include="StoreProcedures\User\AddUser.sql" />
+    <Build Include="StoreProcedures\User\DeleteUnDeleteUser.sql" />
+    <Build Include="StoreProcedures\User\EditUser.sql" />
+    <Build Include="StoreProcedures\User\GeUserDetails.sql" />
+    <Build Include="Tables\RolePermissions.sql" />
+    <Build Include="StoreProcedures\Role\GetRolePermissionDetails.sql" />
+    <Build Include="TableTypes\RolePermissionType.sql" />
+    <Build Include="StoreProcedures\Role\MergeRolePermissions.sql" />
+    <Build Include="Tables\Brands.sql" />
+    <Build Include="Tables\Departments.sql" />
+    <Build Include="Tables\Colors.sql" />
+    <Build Include="Tables\ItemGroups.sql" />
+    <Build Include="Tables\Styles.sql" />
+    <Build Include="StoreProcedures\Brand\AddBrand.sql" />
+    <Build Include="StoreProcedures\Brand\DeleteUnDeleteBrand.sql" />
+    <Build Include="StoreProcedures\Brand\EditBrand.sql" />
+    <Build Include="StoreProcedures\Brand\GetBrandDetails.sql" />
+    <Build Include="StoreProcedures\Color\AddColor.sql" />
+    <Build Include="StoreProcedures\Color\DeleteUnDeleteColor.sql" />
+    <Build Include="StoreProcedures\Color\EditColor.sql" />
+    <Build Include="StoreProcedures\Color\GetColorDetails.sql" />
+    <Build Include="StoreProcedures\Department\AddDepartment.sql" />
+    <Build Include="StoreProcedures\Department\DeleteUnDeleteDepartment.sql" />
+    <Build Include="StoreProcedures\Department\EditDepartment.sql" />
+    <Build Include="StoreProcedures\Department\GetDepartmentDetails.sql" />
+    <Build Include="StoreProcedures\ItemGoup\AddItemGroup.sql" />
+    <Build Include="StoreProcedures\ItemGoup\DeleteUnDeleteItemGroup.sql" />
+    <Build Include="StoreProcedures\ItemGoup\EditItemGroup.sql" />
+    <Build Include="StoreProcedures\ItemGoup\GetItemGroupDetails.sql" />
+    <Build Include="StoreProcedures\Style\AddStyle.sql" />
+    <Build Include="StoreProcedures\Style\DeleteUnDeleteStyle.sql" />
+    <Build Include="StoreProcedures\Style\EditStyle.sql" />
+    <Build Include="StoreProcedures\Style\GetStyleDetails.sql" />
+    <Build Include="Tables\Items.sql" />
+    <Build Include="Tables\Products.sql" />
+    <Build Include="Tables\Sizes.sql" />
+    <Build Include="Tables\DesignNos.sql" />
+    <Build Include="Tables\SizeGroups.sql" />
+    <Build Include="Tables\SizeGroupSizes.sql" />
+    <Build Include="StoreProcedures\DesignNos\AddDesignNo.sql" />
+    <Build Include="StoreProcedures\DesignNos\DeleteUnDeleteDesignNo.sql" />
+    <Build Include="StoreProcedures\DesignNos\EditDesignNo.sql" />
+    <Build Include="StoreProcedures\DesignNos\GetDesignNoDetails.sql" />
+    <Build Include="StoreProcedures\Items\AddItem.sql" />
+    <Build Include="StoreProcedures\Items\DeleteUnDeleteItem.sql" />
+    <Build Include="StoreProcedures\Items\EditItem.sql" />
+    <Build Include="StoreProcedures\Items\GetItemDetails.sql" />
+    <Build Include="StoreProcedures\SizeGroups\AddSizeGroup.sql" />
+    <Build Include="StoreProcedures\SizeGroups\DeleteUnDeleteSizeGroup.sql" />
+    <Build Include="StoreProcedures\SizeGroups\EditSizeGroup.sql" />
+    <Build Include="StoreProcedures\SizeGroups\GetSizeGroupDetails.sql" />
+    <Build Include="StoreProcedures\SizeGroupSizes\AddSizeGroupSize.sql" />
+    <Build Include="StoreProcedures\SizeGroupSizes\DeleteUnDeleteSizeGroupSize.sql" />
+    <Build Include="StoreProcedures\SizeGroupSizes\EditSizeGroupSize.sql" />
+    <Build Include="StoreProcedures\SizeGroupSizes\GetSizeGroupSizeDetails.sql" />
+    <Build Include="StoreProcedures\Sizes\AddSize.sql" />
+    <Build Include="StoreProcedures\Sizes\DeleteUnDeleteSize.sql" />
+    <Build Include="StoreProcedures\Sizes\EditSize.sql" />
+    <Build Include="StoreProcedures\Sizes\GetSizeDetails.sql" />
+    <Build Include="StoreProcedures\Products\AddProduct.sql" />
+    <Build Include="StoreProcedures\Products\DeleteUnDeleteProduct.sql" />
+    <Build Include="StoreProcedures\Products\EditProduct.sql" />
+    <Build Include="StoreProcedures\Products\GetProductDetails.sql" />
+    <Build Include="Tables\SizeCountries.sql" />
+    <Build Include="TableTypes\SizeGroupSizeType.sql" />
+    <Build Include="StoreProcedures\Sizes\GetSizeCountyDetailsById.sql" />
+    <Build Include="TableTypes\SizeCountryType.sql" />
+    <Build Include="StoreProcedures\Sizes\MergeSizeCountries.sql" />
+    <Build Include="StoreProcedures\SizeGroups\MergeSizeGroupSizes.sql" />
+    <Build Include="Tables\ProductSizes.sql" />
+    <Build Include="StoreProcedures\Products\MergeProductSizes.sql" />
+    <Build Include="TableTypes\ProductSizeType.sql" />
+    <Build Include="Tables\GlobalSetting.sql" />
+    <Build Include="StoreProcedures\GlobalSetting\UpdateGlobalSetting.sql" />
+    <Build Include="StoreProcedures\GlobalSetting\GetGlobalSettingDetails.sql" />
+    <Build Include="Tables\TaxTypes.sql" />
+    <Build Include="Tables\TaxAccounts.sql" />
+    <Build Include="Tables\HSNTaxes.sql" />
+    <Build Include="Tables\HSNCodes.sql" />
+    <Build Include="Tables\Taxes.sql" />
+    <Build Include="StoreProcedures\Tax\AddTax.sql" />
+    <Build Include="StoreProcedures\Tax\DeleteUnDeleteTax.sql" />
+    <Build Include="StoreProcedures\Tax\EditTax.sql" />
+    <Build Include="StoreProcedures\Tax\GetTaxDetails.sql" />
+    <Build Include="StoreProcedures\Tax\GetTaxTypeDetails.sql" />
+    <Build Include="StoreProcedures\HSNCode\AddHSNCode.sql" />
+    <Build Include="StoreProcedures\HSNCode\DeleteUnDeleteHSNCode.sql" />
+    <Build Include="StoreProcedures\HSNCode\EditHSNCode.sql" />
+    <Build Include="StoreProcedures\HSNCode\GetHSNCodeDetails.sql" />
+    <Build Include="TableTypes\HSNTaxType.sql" />
+    <Build Include="StoreProcedures\HSNCode\MergeHSNTax.sql" />
+    <Build Include="StoreProcedures\HSNCode\GetHSNTaxDetailsByHSNCodeId.sql" />
+    <Build Include="Tables\AccountGroupTypes.sql" />
+    <Build Include="Tables\AccountGroups.sql" />
+    <Build Include="Tables\AccountCategories.sql" />
+    <Build Include="Tables\CustomerCategories.sql" />
+    <Build Include="StoreProcedures\AccountCategory\AddAccountCategory.sql" />
+    <Build Include="StoreProcedures\AccountCategory\DeleteUnDeleteAccountCategory.sql" />
+    <Build Include="StoreProcedures\AccountCategory\EditAccountCategory.sql" />
+    <Build Include="StoreProcedures\AccountCategory\GetAccountCategoryDetails.sql" />
+    <Build Include="StoreProcedures\CustomerCategory\AddCustomerCategory.sql" />
+    <Build Include="StoreProcedures\CustomerCategory\DeleteUnDeleteCustomerCategory.sql" />
+    <Build Include="StoreProcedures\CustomerCategory\EditCustomerCategory.sql" />
+    <Build Include="StoreProcedures\CustomerCategory\GetCustomerCategoryDetails.sql" />
+    <Build Include="StoreProcedures\AccountGroup\AddAccountGroup.sql" />
+    <Build Include="StoreProcedures\AccountGroup\DeleteUnDeleteAccountGroup.sql" />
+    <Build Include="StoreProcedures\AccountGroup\EditAccountGroup.sql" />
+    <Build Include="StoreProcedures\AccountGroup\GetAccountGroupDetails.sql" />
+    <Build Include="StoreProcedures\AccountGroup\GetAccountGroupTypeDetails.sql" />
+    <Build Include="Tables\City.sql" />
+    <Build Include="Tables\ProfitSharingRatio.sql" />
+    <Build Include="Tables\CompanyTypes.sql" />
+    <Build Include="Tables\CompanyTermsConditions.sql" />
+    <Build Include="Tables\BusinessTypes.sql" />
+    <Build Include="Tables\FinancialYears.sql" />
+    <Build Include="StoreProcedures\FinancialYear\AddFinancialYear.sql" />
+    <Build Include="StoreProcedures\FinancialYear\DeleteUnDeleteFinancialYear.sql" />
+    <Build Include="StoreProcedures\FinancialYear\EditFinancialYear.sql" />
+    <Build Include="StoreProcedures\FinancialYear\GetFinancialYearDetails.sql" />
+    <Build Include="StoreProcedures\Company\AddCompany.sql" />
+    <Build Include="StoreProcedures\Company\DeleteUnDeleteCompany.sql" />
+    <Build Include="StoreProcedures\Company\EditCompany.sql" />
+    <Build Include="StoreProcedures\Company\GetCompanyDetails.sql" />
+    <Build Include="StoreProcedures\Company\GetCompanyTypeDetails.sql" />
+    <Build Include="StoreProcedures\Company\GetBusinessTypeDetails.sql" />
+    <Build Include="Tables\EmployeeDepartments.sql" />
+    <Build Include="Tables\EmployeeDesignations.sql" />
+    <Build Include="Tables\Employees.sql" />
+    <Build Include="StoreProcedures\Employee\AddEmployee.sql" />
+    <Build Include="StoreProcedures\Employee\DeleteUnDeleteEmployee.sql" />
+    <Build Include="StoreProcedures\Employee\EditEmployee.sql" />
+    <Build Include="StoreProcedures\Employee\GetEmployeeDetails.sql" />
+    <Build Include="StoreProcedures\Employee\GetEmployeeDesignationDetails.sql" />
+    <Build Include="StoreProcedures\Employee\GetEmployeeDepartmentDetails.sql" />
+    <Build Include="Tables\Branches.sql" />
+    <Build Include="StoreProcedures\Branch\AddBranch.sql" />
+    <Build Include="StoreProcedures\Branch\DeleteUnDeleteBranch.sql" />
+    <Build Include="StoreProcedures\Branch\EditBranch.sql" />
+    <Build Include="StoreProcedures\Branch\GetBranchDetails.sql" />
+    <Build Include="Tables\Copy of AccountGroups.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CompareSchema.scmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="PreloadedScripts\Script.PostDeployment1.sql" />
+  </ItemGroup>
+</Project>
